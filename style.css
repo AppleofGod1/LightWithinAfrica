@@ -1,0 +1,291 @@
+/* General Page Styling */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  background-color: #fdfcfb;
+  color: #222;
+}
+
+header {
+  background-color: #1e293b;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+.tagline {
+  font-style: italic;
+  font-size: 1rem;
+  margin-top: 0.5rem;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin-top: 15px;
+  flex-wrap: wrap;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: #facc15;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Cover Section */
+.cover {
+  background-image: url('Images/7.png'); /* replace with your actual image path */
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.cover h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.cover p {
+  font-size: 1.2rem;
+}
+
+/* About, Support, Contact, Stories */
+
+
+section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+/* Story Previews */
+.story-preview {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.story-preview img.story-thumbnail {
+  width: 150px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.story-text {
+  max-width: 600px;
+}
+
+.story-text a {
+  display: inline-block;
+  margin-top: 10px;
+  color: #2563eb;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.story-text a:hover {
+  text-decoration: underline;
+}
+
+/* Buttons */
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-top: 10px;
+  background-color: #d97706;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #b45309;
+}
+
+/* Contact Links */
+#contact a {
+  color: #1d4ed8;
+  text-decoration: underline;
+  font-weight: 500;
+}
+
+/* Footer */
+footer {
+  background-color: #1e293b;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9rem;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .story-preview {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .story-preview img.story-thumbnail {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .story-text {
+    max-width: 100%;
+  }
+}
+
+
+#about, #support, #contact {
+  text-align: center;
+}
+
+#about p,
+#support p,
+#contact p,
+#support ul {
+  margin: 0 auto;
+  max-width: 700px;
+}
+
+
+
+#latest-stories {
+  text-align: center;
+}
+
+#latest-stories .story-preview {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  justify-content: center; /* ✅ This centers the content horizontally */
+  flex-wrap: wrap;
+}
+
+#latest-stories .story-text {
+  max-width: 600px;
+  text-align: left; /* Optional: keep text alignment readable */
+}
+
+
+.story-preview {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  justify-content: center; /* ✅ This fixes the centering */
+  flex-wrap: wrap;
+}
+
+
+
+
+
+/* Ensure story-wrapper is centered and constrained */
+.story-wrapper {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/* Latest stories previews - keep structure and spacing */
+#latest-stories .story-preview {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+#latest-stories .story-thumbnail {
+  width: 150px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+#latest-stories .story-text {
+  max-width: 600px;
+  text-align: left;
+}
+
+
+/* Stories Page Wrapper */
+.story-page-wrapper {
+  max-width: 850px;
+  margin: 0 auto;
+  padding: 50px 20px;
+  line-height: 1.8;
+}
+
+/* Section Headings */
+.story-page-wrapper h2 {
+  font-size: 2rem;
+  color: #1e293b;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Paragraphs and Emphasis */
+.story-page-wrapper p {
+  margin-bottom: 1.2rem;
+  text-align: justify;
+}
+
+.story-page-wrapper em {
+  display: block;
+  font-style: italic;
+  color: #6b7280;
+  margin-top: 20px;
+  text-align: center;
+}
+
+/* Story Images */
+.story-image {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 20px auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Divider Styling */
+hr {
+  margin: 50px auto;
+  border: none;
+  border-top: 1px solid #ddd;
+  width: 80%;
+}
